@@ -18,7 +18,7 @@ module.exports = {
   },
   module: {
     loaders: [
-      { test: /\.css$/, loaders: ['style-loader', 'css-loader'] },
+      { test: /\.scss$/, loaders: ['style', 'css', 'sass'] },
       { test: /\.(js|jsx)$/, exclude: /node_modules/, loader: 'babel-loader' },
       { test: /\.(png|jpg|gif)$/, loader: 'file-loader?name=images/[name].[ext]' },
       { test: /\.(pdf|doc)$/, loader: 'file-loader?limit=30000&name=documents/[name].[ext]' },
@@ -27,7 +27,7 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      title: 'React Starter',
+      title: 'React Redux Starter',
       inject: false,
       mobile: true,
       minify: {
@@ -45,7 +45,6 @@ module.exports = {
       meta: [],
       links: [
         { rel: 'icon', href: 'images/favicon.ico', type: 'image/x-icon' },
-        { rel: 'stylesheet', href: '../node_modules/bootstrap/dist/css/bootstrap.min.css' }
       ],
       window: { env: {} }
     }),
