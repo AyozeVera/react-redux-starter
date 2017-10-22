@@ -1,6 +1,11 @@
 # react-starter
 
 A React-Redux project generator based on the [ibandominguez/react-starter](https://facebook.github.io/jest/) one.
+This starter includes:
+* React
+* Redux
+* React-Router
+* Sass Support
 
 ## Getting started
 
@@ -19,10 +24,6 @@ Go to http://localhost:8080, you should see the project running.
 npm run build
 ```
 Build directory created, packaged application ready to deploy.
-
-```sh
-npm run test
-```
 
 ## License
 
