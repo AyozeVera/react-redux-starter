@@ -1,5 +1,5 @@
 {
-  "name": "react-starter",
+  "name": "react-redux-starter",
   "main": "src/app.js",
   "scripts": {
     "dev": "NODE_ENV=development webpack-dev-server --progress --hide-modules --colors --hot --inline --history-api-fallback",
@@ -35,17 +35,17 @@
     "webpack-dev-server": "^1.12.0"
   },
   "dependencies": {
-    "bootstrap": "^3.3.7",
     "history": "^4.6.3",
+    "node-sass": "^4.5.3",
     "prop-types": "^15.5.10",
     "react": "^15.2.1",
-    "react-bootstrap": "^0.31.2",
     "react-dom": "^15.5.4",
     "react-redux": "^5.0.4",
     "react-router": "^4.1.1",
     "react-router-dom": "^4.1.1",
     "react-router-redux": "^5.0.0-alpha.6",
     "redux": "^3.6.0",
-    "redux-thunk": "^2.2.0"
+    "redux-thunk": "^2.2.0",
+    "sass-loader": "^6.0.6"
   }
 }
