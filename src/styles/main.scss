@@ -1,3 +1,10 @@
 @import 'variables';
+@import '~bootstrap/dist/css/bootstrap.min.css';
 @import 'components/all';
 @import 'containers/all';
+
+h1 {
+  background: $color-black;
+  color: $color-white;
+  padding: 20px;
+}
