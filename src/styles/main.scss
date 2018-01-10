@@ -1,3 +1,8 @@
 @import 'variables';
+@import '~bootstrap/dist/css/bootstrap.min.css';
 @import 'components/all';
 @import 'containers/all';
+
+html, body, #app, #app>div {
+  height: 100%;
+}
