@@ -2,10 +2,12 @@
 
 A React-Redux project generator based on the [ibandominguez/react-starter](https://facebook.github.io/jest/) one.
 This starter includes:
+* ES6 Support
 * React
 * Redux
 * React-Router
 * Sass Support
+* React Bootstrap
 
 ## Getting started
 
