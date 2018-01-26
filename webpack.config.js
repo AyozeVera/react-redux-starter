@@ -43,16 +43,16 @@ module.exports = {
       baseHref: '/',
       googleAnalytics: { trackingId: 'UA-XXXX-XX', pageViewOnLoad: true },
       meta: [
-        { name: "description", content: "" }
-        { property: "og:title", content: "" }
-        { property: "og:description", content: "" }
-        { property: "og:image", content: "" }
-        { property: "og:url", content: "" }
-        { property: "og:site_name", content: "" }
-        { name: "twitter:title", content: "" }
-        { name: "twitter:description", content: "" }
-        { name: "twitter:image", content: "" }
-        { name: "twitter:card", content: "" }
+        { name: "description", content: "" },
+        { property: "og:title", content: "" },
+        { property: "og:description", content: "" },
+        { property: "og:image", content: "" },
+        { property: "og:url", content: "" },
+        { property: "og:site_name", content: "" },
+        { name: "twitter:title", content: "" },
+        { name: "twitter:description", content: "" },
+        { name: "twitter:image", content: "" },
+        { name: "twitter:card", content: "" },
       ],
       links: [
         { rel: 'icon', href: 'images/favicon.ico', type: 'image/x-icon' },
@@ -66,6 +66,9 @@ module.exports = {
       compress: { warnings: false }
     })),
     ifProduction(new WebpackOnBuildPlugin((stats) => {
+      if (!fs.existsSync('./build/images')){
+        fs.mkdirSync('./build/images');
+      }
       fs.createReadStream('./src/images/favicon.ico').pipe(fs.createWriteStream('./build/images/favicon.ico'))
 
       fs.writeFileSync('./build/.htaccess', [
