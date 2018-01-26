@@ -42,7 +42,18 @@ module.exports = {
       appMountId: 'app',
       baseHref: '/',
       googleAnalytics: { trackingId: 'UA-XXXX-XX', pageViewOnLoad: true },
-      meta: [],
+      meta: [
+        { name: "description", content: "" }
+        { property: "og:title", content: "" }
+        { property: "og:description", content: "" }
+        { property: "og:image", content: "" }
+        { property: "og:url", content: "" }
+        { property: "og:site_name", content: "" }
+        { name: "twitter:title", content: "" }
+        { name: "twitter:description", content: "" }
+        { name: "twitter:image", content: "" }
+        { name: "twitter:card", content: "" }
+      ],
       links: [
         { rel: 'icon', href: 'images/favicon.ico', type: 'image/x-icon' },
       ],
