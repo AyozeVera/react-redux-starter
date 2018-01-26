@@ -1,8 +1,15 @@
-@import 'variables';
-@import '~bootstrap/dist/css/bootstrap.min.css';
-@import 'components/all';
-@import 'containers/all';
+/* Boostrap 4 Core */
+@import '~bootstrap/scss/bootstrap.scss';
 
+/* Boostrap 4 Variables, override them to personilize bootstrap parammeters */
+@import 'bootstrap-overrides';
+
+/* Project Variables */
+@import 'variables';
+/* Project components unic styles */
+@import 'components/all';
+
+/* Generic styles Here */
 html, body, #app, #app>div {
   height: 100%;
 }
