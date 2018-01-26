@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { Container, Row, Col } from 'reactstrap'
 import PropTypes from 'prop-types'
 
 export default class ExampleComponent extends Component {
@@ -16,10 +17,14 @@ export default class ExampleComponent extends Component {
 
   render() {
     return (
-      <div>
-        <h1>Example Component</h1>
-        <button onClick={(event) => this.handleOnClick(event)}>Change my value! - {this.props.content ? this.props.content : ''}</button>
-      </div>
+      <Container>
+        <Row>
+          <Col>
+            <h1>Example Component</h1>
+            <button onClick={(event) => this.handleOnClick(event)}>Change my value! - {this.props.content ? this.props.content : ''}</button>
+          </Col>
+        </Row>
+      </Container>
     )
   }
 }
